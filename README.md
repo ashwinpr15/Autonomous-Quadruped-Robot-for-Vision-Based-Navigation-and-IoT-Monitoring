@@ -50,4 +50,4 @@ The robot mimics a predatory "creep" movement where 3 legs always remain on the 
 4. **Run Manual Mode:**
    `python src/manual_control.py` (Use WASD keys)
 
-[📄 View Full Project Report (PDF)](./AQR%20Final%20Project%20Report.pdf)
+[📄 View Full Project Report (PDF)](Ashwin BE Project Report.pdf)
