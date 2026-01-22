@@ -1,0 +1,8 @@
+opencv-python
+numpy
+RPi.GPIO
+adafruit-pca9685
+adafruit-circuitpython-dht
+picamera
+thingspeak
+matplotlib
