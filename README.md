@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=flat-square)
 ![Raspberry Pi](https://img.shields.io/badge/Hardware-Raspberry%20Pi%204-red?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/Vision-OpenCV-green?style=flat-square)
-![MQTT](https://img.shields.io/badge/IoT-MQTT-orange?style=flat-square)
+![ThingSpeak](https://img.shields.io/badge/IoT-ThingSpeak-orange?style=flat-square)
 
 A four-legged autonomous robot designed for stable locomotion on irregular terrain. This project implements a custom **Creep Gait** algorithm, uses **Computer Vision (Canny Edge Detection)** for obstacle avoidance, and features real-time IoT environmental monitoring.
 
@@ -39,7 +39,7 @@ The robot mimics a predatory "creep" movement where 3 legs always remain on the 
 * `src/navigation.py`: Main autonomous driving logic using OpenCV.
 * `src/locomotion.py`: Servo control sequences for walking gaits.
 * `src/manual_control.py`: Threaded remote control interface.
-* `src/iot_monitor.py`: MQTT sensor data publisher.
+* `src/iot_monitor.py`: Sensor data publisher (ThingSpeak).
 * `src/stream_client.py`: Video streaming client.
 
 ## 🚀 Usage
