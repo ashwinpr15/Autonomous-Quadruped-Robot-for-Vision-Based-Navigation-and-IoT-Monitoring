@@ -7,7 +7,16 @@
 
 A four-legged autonomous robot designed for stable locomotion on irregular terrain. This project implements a custom **Creep Gait** algorithm, uses **Computer Vision (Canny Edge Detection)** for obstacle avoidance, and features real-time IoT environmental monitoring.
 
-**Collaborators:** Ashwin P R, Bhargav Hegde
+**Developer:** Ashwin Pillanda Ravindra
+
+---
+
+## 🎓 Academic Project Context
+This project was developed as the **Final Year Capstone Project** for the **Bachelor of Engineering in Electronics and Communication Engineering** at **SDM Institute of Technology, Ujire** (Affiliated to Visvesvaraya Technological University, Belagavi).
+
+> *"Certified that the Project Work titled ‘Quadruped Autonomous Robot’ is carried out by Mr. Ashwin Pillanda Ravindra, USN: 4SU17EC012, bonafide student of SDM Institute of Technology, Ujire, in partial fulfilment for the award of the degree of Bachelor of Engineering in Electronics and Communication Engineering during the year 2020-2021."*
+
+---
 
 ## ⚡ Key Features
 * **Autonomous Navigation:** Detects and bypasses obstacles using a Pi Camera and image processing algorithms (Canny Edge Detection).
