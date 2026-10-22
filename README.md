@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Quadruped robot capstone" width="100%">
+</picture>
+
 # Quadruped robot capstone
 
 An engineering project documented in a 35-page report, with Python modules for servo control, image-based navigation decisions, and environmental sensor publishing.
