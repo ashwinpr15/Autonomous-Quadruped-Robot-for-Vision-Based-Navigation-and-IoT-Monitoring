@@ -1,11 +1,17 @@
 import time
 from threading import Thread, Lock
-import Adafruit_PCA9685
-
 # --- Configuration from Project Report ---
-pwm = Adafruit_PCA9685.PCA9685()
-pwm.set_pwm_freq(60)
+_pwm = None
 i2c_mutex = Lock()
+
+def get_pwm():
+    """Creates the PCA9685 driver on first use, so importing this module needs no hardware."""
+    global _pwm
+    if _pwm is None:
+        import Adafruit_PCA9685
+        _pwm = Adafruit_PCA9685.PCA9685()
+        _pwm.set_pwm_freq(60)
+    return _pwm
 
 # Servo Pulse Limits
 SERVO_MIN = 150
@@ -40,14 +46,14 @@ def set_servo(channel, angle):
     angle = max(0, min(180, angle))
     with i2c_mutex:
         pulse = int((angle * 2.5) + 150)
-        pwm.set_pwm(channel, 0, pulse)
+        get_pwm().set_pwm(channel, 0, pulse)
 
 def set_servo_invert(channel, angle):
     """Inverted servo movement for opposing legs."""
     angle = max(0, min(180, angle))
     with i2c_mutex:
         pulse = int((angle * -2.5) + 600)
-        pwm.set_pwm(channel, 0, pulse)
+        get_pwm().set_pwm(channel, 0, pulse)
 
 def move_leg_servos(leg_index, target_angles, offsets, invert_indices=[]):
     """

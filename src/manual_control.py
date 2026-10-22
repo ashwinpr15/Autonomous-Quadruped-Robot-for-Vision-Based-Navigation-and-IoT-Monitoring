@@ -1,5 +1,9 @@
 import sys, tty, termios
-from locomotion import begin, forward, backward, turn_left, turn_right
+from locomotion import begin, forward
+
+# The report describes backward and turning gaits (Figs 5.7-5.9), but their code
+# isn't part of this repository yet, so those keys explain that instead of crashing.
+NOT_YET = "Not in this version yet: only the forward creep gait is implemented."
 
 def get_key():
     """Captures single keypress for real-time control (Page 8)."""
@@ -15,7 +19,7 @@ def get_key():
 def manual_drive():
     print("Initializing Robot...")
     begin() # Set initial stance
-    print("Manual Control Active. [W]Fwd [S]Bwd [A]Left [D]Right [X]Exit")
+    print("Manual Control Active. [W] Forward  [X] Exit   (S/A/D: not implemented yet)")
 
     while True:
         char = get_key()
@@ -23,12 +27,11 @@ def manual_drive():
         if char == 'w':
             forward()
         elif char == 's':
-            backward() # Note: backward() needs to be implemented in locomotion.py similar to forward()
-            print("Moving Backward")
+            print(NOT_YET)
         elif char == 'a':
-            turn_left() # Note: turn_left() needs implementation
+            print(NOT_YET)
         elif char == 'd':
-            turn_right() # Note: turn_right() needs implementation
+            print(NOT_YET)
         elif char == 'x':
             print("Exiting...")
             break
