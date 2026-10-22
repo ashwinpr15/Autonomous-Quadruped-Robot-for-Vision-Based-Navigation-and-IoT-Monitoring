@@ -1,15 +1,6 @@
-# Image Processing & Computer Vision
-opencv-python        # For Canny edge detection and contouring
-numpy                # For coordinate storage and chunk processing
-
-# Hardware & GPIO Control
-RPi.GPIO             # For pin configuration and ultrasonic sensor
-Adafruit-PCA9685     # For driving the 12 servo motors via I2C
-
-# Sensors & IoT
-Adafruit_DHT         # Specifically for DHT11 data retrieval
-thingspeak           # For cloud data visualization
-paho-mqtt            # Supporting library for the MQTT protocol used
-
-# Camera
-picamera             # For native Pi Cam interface and frame capture
+# Libraries for running the robot on a Raspberry Pi (Raspberry Pi OS)
+opencv-python        # Canny edge detection and drawing
+numpy                # chunk averages
+Adafruit-PCA9685     # legacy driver imported by locomotion.py (12 servos over I2C)
+Adafruit_DHT         # DHT11 temperature and humidity
+thingspeak           # posting sensor readings to a ThingSpeak channel
