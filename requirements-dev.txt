@@ -1,0 +1,3 @@
+# For running the tests and the still-image navigation demo on a laptop (no robot needed)
+numpy
+opencv-python-headless
