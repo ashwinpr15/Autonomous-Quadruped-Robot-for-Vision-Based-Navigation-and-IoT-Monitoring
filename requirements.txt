@@ -1,15 +1,15 @@
 # Image Processing & Computer Vision
-opencv-python        # For Canny edge detection and contouring [cite: 149, 150]
-numpy                # For coordinate storage and chunk processing [cite: 228, 230]
+opencv-python        # For Canny edge detection and contouring
+numpy                # For coordinate storage and chunk processing
 
 # Hardware & GPIO Control
-RPi.GPIO             # For pin configuration and ultrasonic sensor [cite: 232, 236]
-adafruit-pca9685     # For driving the 12 servo motors via I2C [cite: 243, 246]
+RPi.GPIO             # For pin configuration and ultrasonic sensor
+Adafruit-PCA9685     # For driving the 12 servo motors via I2C
 
 # Sensors & IoT
-Adafruit_DHT         # Specifically for DHT11 data retrieval [cite: 141, 472]
-thingspeak           # For cloud data visualization [cite: 463, 484]
-paho-mqtt            # Supporting library for the MQTT protocol used [cite: 74, 152]
+Adafruit_DHT         # Specifically for DHT11 data retrieval
+thingspeak           # For cloud data visualization
+paho-mqtt            # Supporting library for the MQTT protocol used
 
 # Camera
-picamera             # For native Pi Cam interface and frame capture [cite: 123, 174]
+picamera             # For native Pi Cam interface and frame capture
